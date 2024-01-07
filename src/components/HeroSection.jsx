@@ -16,7 +16,7 @@ function HeroSection() {
       console.log('Token:', token);
 
       // Thực hiện yêu cầu API
-      fetch('http://100.99.67.126:8081/file/get/u', {
+      fetch('http://localhost:8080/file/get/u', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -51,7 +51,6 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          
           INSERT NOW
         </Button>
         <Button
